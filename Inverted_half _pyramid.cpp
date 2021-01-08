@@ -6,10 +6,15 @@ int main()
     int blocks;
     cout<<"Enter the number of blocks\n";
     cin>>blocks;
-    for (int i = blocks; i >=1; i--)
+    for (int i = 1; i <=blocks; i++)
     {
-        for (int j = i; j>=1; j--)
-            cout<<"*";
+        for (int j = 1; j<=blocks; j++)
+        {
+            if(i<=j)
+                cout<<"*";
+            else
+                cout<<"";    
+        }    
         cout<<endl;    
     }
     
